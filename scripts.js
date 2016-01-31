@@ -26,9 +26,8 @@ function forSubmit(e) {
       }
     //places "thoughts" into a list on site
     $("#list-id").append("<li>" + words + "</li>");
-    $(this).find('textarea').val('');
-    // equivalent to:
-    // this.reset()
+    $(this).find('#thoughts').val('');
+    words = null;
 }
 
 function reset () {
